@@ -1,3 +1,9 @@
+main {
+    border: 2px solid #00CED1;
+    box-shadow: 0 0 30px #00CED1;
+}
+
+
 input {
     background-color: #000000;
     border: none;
