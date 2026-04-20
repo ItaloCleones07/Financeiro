@@ -24,6 +24,12 @@ button {
     transition: transform 0.3s ease;
 }
 
+.button-cadastro {
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+}
+
 button:hover {
     transform: scale(1.1, 1.1);
 }
