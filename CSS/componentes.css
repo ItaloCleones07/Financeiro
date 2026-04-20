@@ -1,0 +1,47 @@
+input {
+    background-color: #000000;
+    border: none;
+    padding: 20px;
+}
+
+input::placeholder {
+    color: #00CED1;
+    font-size: 15px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    color: #00CED1;
+    background-color: #000000;
+    box-shadow: 0 0 20px rgba(0,206,209);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1, 1.1);
+}
+
+button:active {
+    transform: scale(1,1);
+}
+
+a {
+    text-decoration: none;
+    color: #00CED1;
+    transition: transform 0.3 ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    transform: scale(1.05, 1.05);
+}
