@@ -1,11 +1,41 @@
 main {
-    border: 2px solid #00CED1;
-    box-shadow: 0 0 30px #00CED1;
+    position: relative;
 }
 
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+main::after, main::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),transparent 40%, rgb(0,206,209));
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+main::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
 
 input {
-    background-color: #000000;
+    background-color: #1C1C1C;
     border: none;
     padding: 20px;
 }
