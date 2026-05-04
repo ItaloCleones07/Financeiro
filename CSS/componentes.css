@@ -87,3 +87,8 @@ a:hover {
 a:active {
     transform: scale(1.05, 1.05);
 }
+
+.Erro {
+    position: relative;
+    bottom: 15px;
+}

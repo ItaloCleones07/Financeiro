@@ -28,3 +28,7 @@ input {
     height: 30px;
     font-size: 15px;
 }
+
+.Erro {
+    color: #ff0000;
+}
